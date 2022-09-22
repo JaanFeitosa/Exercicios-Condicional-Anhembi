@@ -1,0 +1,40 @@
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) { 
+    
+    System.out.println("\nExercicio 1\n");
+    double salario1 = 100.00;
+    double ir1 = 0.0;
+    double salliq1 = 100.00;
+
+    
+    double salario2 = 200.00;
+    double ir2 = 10.00;
+    double salliq2 = 190.00;
+
+    
+    double salario = 300.00;
+    double ir = 15.0;
+    double salliq = 185.00;
+
+    if(salliq1 >= 100){
+      System.out.println("A. Verdadeiro"); 
+    }else{
+      System.out.println("A. Falso");
+    }
+
+    if(salliq2 <190){
+      System.out.println("B. Verdadeiro");
+    }else{
+      System.out.println("B. Falso");
+    }
+
+    if(salliq == salario + ir){
+      System.out.println("C. Verdadeiro");
+    }else{
+      System.out.println("C. Falso");
+    }
+    
+    
