@@ -1,0 +1,23 @@
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+  
+  System.out.println("\nExercicio 6\n");
+    double quilos;
+
+    Scanner sc = new Scanner(System.in);
+
+    for(int i =0; i<1; i++);
+    System.out.println("\nDigite quantos Quilos você pescou!!\n");
+    quilos = sc.nextDouble();
+    if(quilos > 50.0){
+      quilos = quilos - 50.0;
+      quilos = quilos * 4.0;
+    }else{
+      System.out.println("\nVocê não precisa pagar Multa!!\n");
+
+    }
+
+    System.out.println("\nVocê Precisa pagar: " + quilos + " Reais de Multa!!\n");
