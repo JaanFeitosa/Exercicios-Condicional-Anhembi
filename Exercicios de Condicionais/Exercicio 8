@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+  
+   System.out.println("\n\nExercicio 8");
+
+    String sangue;
+    Scanner sc = new Scanner(System.in);
+
+    for(int i= 0; i<10; i++){
+      System.out.println("Digite seu Tipo Sanguíneo!! ");
+      sangue = sc.next();
+      if(sangue.equals("A+")){
+      System.out.println("\nvocê pode receber doações de: A+, A-, O+, O-\n");
+      }else if(sangue.equals("A-")){
+      System.out.println("\nvocê pode receber doações de: A-, O-\n");
+      }else if(sangue.equals("B+")){
+      System.out.println("\nvocê pode receber doações de: B+, B-, O+, O-\n");
+      }else if(sangue.equals("B-")){
+      System.out.println("\nvocê pode receber doações de: B- e O-\n");
+      }else if(sangue.equals("AB+")){
+      System.out.println("\nvocê pode receber doações de: Todos os tipos Sangúineos!\n");
+      }else if(sangue.equals("AB-")){
+      System.out.println("\nvocê pode receber doações de: A-, B-, O- E AB-\n");
+      }else if(sangue.equals("O+")){
+      System.out.println("\nvocê pode receber doações de: O+ E O-\n");
+      }else if(sangue.equals("O-")){
+      System.out.println("\nvocê pode receber doações de: Apenas O-\n");
+      }
+    }
