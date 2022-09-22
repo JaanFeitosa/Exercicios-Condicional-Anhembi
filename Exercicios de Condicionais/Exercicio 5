@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+  
+    System.out.println("\nExercicio 5\n");
+    int altura = 0;
+    int sexo = 0;
+    double pesoIdealH = 0;
+    double pesoIdealM = 0;
+
+    
+    Scanner sc = new Scanner(System.in);
+
+    for(int i = 0; i<2; i++){
+       System.out.println("Digite seu Sexo: ");
+        sexo = sc.nextInt();
+
+      if(sexo == 1){
+        System.out.println("Digite sua altura: ");
+        altura = sc.nextInt();
+        pesoIdealH = 72.7 * altura;
+      pesoIdealH = pesoIdealH / 100.0;
+      pesoIdealH = pesoIdealH - 58.0;}
+      else{
+        System.out.println("Digite sua altura: ");
+        altura = sc.nextInt();}
+      pesoIdealM = 62.1 * altura;
+      pesoIdealM = pesoIdealM / 100.0;
+      pesoIdealM = pesoIdealM - 44.7;
+    }
+
+    System.out.println("\nPeso Ideal Homem: \n" + pesoIdealH + " KG");
+    System.out.println("\nPeso Ideal Mulher: \n" + pesoIdealM + " KG");
