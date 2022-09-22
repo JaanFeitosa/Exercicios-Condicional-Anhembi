@@ -1,2 +1,2 @@
 # Exercicios-Condicional-Anhembi
-Exercicios utilizando condicionais e laços de repetição
+Exercicios utilizando condicionais if, else if e else e laços de repetição como o for
