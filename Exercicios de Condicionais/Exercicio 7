@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+System.out.println("\nExercicio 7\n");
+
+    String nome;
+    double idade;
+    int sexo;
+    double hemoglobina;
+
+    Scanner sc = new Scanner(System.in);
+
+    for (int i = 0; i<1; i++);
+    System.out.println("\nDigite sua Idade: \n");
+    idade = sc.nextDouble();
+
+    if((idade>=2) && (idade<=6)){
+      System.out.println("\nDigite seu nome: \n");
+        nome = sc.next();
+        System.out.println("\nDigite sua hemoglobina em g/dL: \n");
+        hemoglobina = sc.nextDouble();
+      if((hemoglobina>=11.5) && (hemoglobina<=13.5)){
+        System.out.println("\nSeu Resultado está OK!!\n");
+      }else{
+        System.out.println("\nHouve Alteração em seu Resultado!!\n");
+   }
+    }else if((idade>=7) && (idade<=12)){
+      System.out.println("\nDigite seu nome: \n");
+      nome = sc.next();
+      System.out.println("\nDigite sua hemoglobina em g/dL: \n");
+      hemoglobina = sc.nextDouble();
+      if((hemoglobina>=11.5) && (hemoglobina<=15.5)){
+        System.out.println("\nSeu Resultado está OK!!\n");
+      }else{
+        System.out.println("\nHouve Alteração em seu Resultado!!\n");
+      }
+    }else if(idade>12){
+      System.out.println("\nDigite seu Sexo!!\n");
+      sexo = sc.nextInt();
+        if(sexo == 1){
+          System.out.println("\nDigite seu nome: \n");
+          nome = sc.next();
+          System.out.println("\nDigite sua hemoglobina em g/dL: \n");
+          hemoglobina = sc.nextDouble();
+          if((hemoglobina>=14.0) && (hemoglobina<=18.0)){
+          System.out.println("\nSeu Resultado está OK!!\n");
+          }else{
+          System.out.println("\nHouve Alteração em seu Resultado!!\n");
+          }
+        }else{System.out.println("\nDigite seu nome: \n");
+          nome = sc.next();
+          System.out.println("Você Está grávida? 1 Sim, 2 não.");
+          int gravida = sc.nextInt();
+            if(gravida == 1){System.out.println("\nDigite sua hemoglobina em g/dL: \n");
+              hemoglobina = sc.nextDouble();
+              if(hemoglobina == 11.0){
+              System.out.println("\nSeu Resultado está OK!!\n");
+              }else{
+              System.out.println("\nHouve Alteração em seu Resultado!!\n");
+              }
+            }else{System.out.println("\nDigite sua hemoglobina em g/dL: \n");
+              hemoglobina = sc.nextDouble();
+              if((hemoglobina>=12.0) && (hemoglobina<=16.0)){
+              System.out.println("\nSeu Resultado está OK!!\n");
+              }else{
+              System.out.println("\nHouve Alteração em seu Resultado!!\n");
+              }
+            }
+        }
+    }
