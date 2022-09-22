@@ -1,0 +1,27 @@
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+  
+  System.out.println("\nExercicio 2\n");
+
+     int a = 3, b = 7, c = 4;
+
+     if((a+c)>b){
+       System.out.println("A. Verdadeiro");
+     }else{
+       System.out.println("A. Falso");
+     }
+
+    if(b>=(a=2)){
+      System.out.println("B. Verdadeiro");
+    }else{
+      System.out.println("B. Falso");
+    }
+
+    if(c==(b-a)){
+      System.out.println("C. Verdadeiro");
+    }else{
+      System.out.println("C. Falso");
+    }
